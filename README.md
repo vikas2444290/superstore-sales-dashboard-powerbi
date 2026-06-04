@@ -1,49 +1,51 @@
-# 📊 Super Store Sales Dashboard (Power BI)
+# 📊 Super Store Sales Dashboard | Power BI
 
 ## Overview
 
-An interactive Power BI dashboard built to analyze retail sales performance, customer segments, shipping modes, regional trends, and future sales forecasts.
+This project is an interactive Power BI dashboard built using the Super Store dataset to analyze sales performance, profit trends, customer segments, shipping modes, and regional performance.
 
-The dashboard enables business stakeholders to monitor KPIs, identify profitable categories, compare regional performance, and forecast future sales using historical transaction data.
+The dashboard provides business insights through interactive visualizations and includes a 15-day sales forecasting model for future trend analysis.
 
 ---
 
 ## Business Problem
 
-Retail businesses generate large amounts of sales data but often struggle to:
+Retail businesses generate large amounts of transactional data but often struggle to answer questions such as:
 
-- Track overall sales performance
-- Identify profitable product categories
-- Compare regional performance
-- Understand customer purchasing behavior
-- Forecast future demand
+- Which region generates the highest sales?
+- Which product categories are most profitable?
+- How do customer segments contribute to revenue?
+- Which shipping modes are most frequently used?
+- What are the expected sales trends in the near future?
 
-This dashboard provides a centralized analytical solution for data-driven decision making.
+This dashboard helps transform raw sales data into actionable insights for better business decision-making.
 
 ---
 
-## Tools & Technologies
+## Tools & Technologies Used
 
 - Power BI
 - Power Query
 - DAX
 - Data Modeling
-- Time Series Forecasting
 - Data Visualization
+- Time Series Forecasting
 
 ---
 
-## Key KPIs
+## Key Metrics Tracked
 
 - Total Sales
-- Total Orders
 - Total Profit
-- Regional Performance
-- Category Analysis
-- Customer Segment Analysis
-- Shipping Mode Analysis
+- Total Quantity Sold
+- Number of Orders
+- Sales by Region
+- Sales by Category
+- Sales by Sub-Category
+- Sales by Customer Segment
+- Sales by Payment Mode
+- Sales by Shipping Mode
 - State-wise Sales Distribution
-- 15-Day Sales Forecast
 
 ---
 
@@ -51,106 +53,159 @@ This dashboard provides a centralized analytical solution for data-driven decisi
 
 ## Main Dashboard
 
-![Dashboard](images/dashboard-overview.png)
+![Main Dashboard](Dashboard%20Screenshots/Dashboard.png)
 
 ---
 
-## Central Region Analysis
+## Regional Analysis
 
-![Central](images/central-region.png)
+### Central Region
 
-### Insights
+![Central Region](Dashboard%20Screenshots/Central.png)
 
+#### Insights
 - Total Sales: 341K
-- Office Supplies generated highest revenue
-- Consumer segment contributed most sales
+- Consumer segment contributes the highest sales.
+- Office Supplies category leads revenue generation.
 
 ---
 
-## East Region Analysis
+### East Region
 
-![East](images/east-region.png)
+![East Region](Dashboard%20Screenshots/East.png)
 
-### Insights
-
+#### Insights
 - Total Sales: 450K
-- Highest contribution among categories from Office Supplies
-- Strong sales concentration in major eastern states
+- Strong performance across Office Supplies and Technology categories.
+- High concentration of sales in major eastern states.
 
 ---
 
-## South Region Analysis
+### South Region
 
-![South](images/south-region.png)
+![South Region](Dashboard%20Screenshots/South.png)
 
-### Insights
-
+#### Insights
 - Total Sales: 252K
-- Consumer segment dominated sales
-- Phones generated highest sub-category revenue
+- Consumer segment contributes over half of total sales.
+- Phones are the highest-performing sub-category.
 
 ---
 
-## West Region Analysis
+### West Region
 
-![West](images/west-region.png)
+![West Region](Dashboard%20Screenshots/West.png)
 
-### Insights
-
+#### Insights
 - Total Sales: 522K
-- Highest performing region
-- Strong contribution from Technology and Office Supplies
+- Highest-performing region overall.
+- Strong contribution from Technology and Office Supplies categories.
 
 ---
 
 ## Sales Forecast Dashboard
 
-![Forecast](images/sales-forecast.png)
+![Sales Forecast](Dashboard%20Screenshots/Sales%20Forecast.png)
 
-### Forecasting Features
+### Forecast Features
 
-- Historical sales trend analysis
-- 15-day future sales prediction
-- Confidence interval visualization
-- State-wise sales comparison
-
----
-
-## Project Highlights
-
-✔ Interactive Dashboard
-
-✔ Dynamic Region Filtering
-
-✔ KPI Monitoring
-
-✔ Geographical Analysis
-
-✔ Category & Segment Analysis
-
-✔ Sales Forecasting
-
-✔ Business Insight Generation
+- Historical sales trend visualization
+- 15-Day Sales Forecast
+- Forecast confidence interval
+- Future sales estimation based on historical data
 
 ---
 
-## Learning Outcomes
+## Dashboard Features
 
-Through this project I learned:
+✅ Interactive Region Filtering
 
-- Data cleaning and transformation using Power Query
-- Data modeling in Power BI
-- Creating DAX measures
-- Designing interactive dashboards
-- Building forecasting visualizations
-- Converting raw data into actionable business insights
+✅ Dynamic KPI Cards
+
+✅ Sales Trend Analysis
+
+✅ Profit Trend Analysis
+
+✅ Category & Sub-Category Analysis
+
+✅ Customer Segment Analysis
+
+✅ Payment Mode Analysis
+
+✅ Shipping Mode Analysis
+
+✅ Geographic Sales Visualization
+
+✅ Sales Forecasting
+
+---
+
+## DAX Measures Used
+
+Examples of measures used in this project:
+
+```DAX
+Total Sales = SUM(Orders[Sales])
+
+Total Profit = SUM(Orders[Profit])
+
+Total Quantity = SUM(Orders[Quantity])
+
+Total Orders = DISTINCTCOUNT(Orders[Order ID])
+```
+
+---
+
+## Project Structure
+
+```text
+├── Dashboard Screenshots
+│   ├── Central.png
+│   ├── Dashboard.png
+│   ├── East.png
+│   ├── Sales Forecast.png
+│   ├── South.png
+│   └── West.png
+│
+├── Dataset
+│
+├── LICENSE
+├── README.md
+└── SuperStore_Sales_Dashboard.pbix
+```
+
+---
+
+## What I Learned
+
+Through this project, I gained hands-on experience with:
+
+- Data Cleaning using Power Query
+- Creating Data Models in Power BI
+- Writing DAX Measures
+- Designing Interactive Dashboards
+- Business-Oriented Data Analysis
+- Forecasting Techniques in Power BI
+- Storytelling with Data
+
+---
+
+## Future Improvements
+
+- Add Profit Margin Analysis
+- Add Customer Retention Metrics
+- Add Drill-Through Pages
+- Publish Dashboard to Power BI Service
+- Connect Dashboard to Live Data Sources
 
 ---
 
 ## Author
 
-Vikas Singh
+### Vikas Yadav
 
 BS Degree in Data Science and Applications
 
 Indian Institute of Technology Madras
+
+LinkedIn: https://www.linkedin.com/in/data-scientist-vikas/
